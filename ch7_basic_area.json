@@ -4,31 +4,31 @@
   "data": {"url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/advanced/OWID_world_poverty_panel.csv"},
   "mark": "area",
   "title": {
-    "text": "Population at Poverty Thresholds",
-    "subtitle": ["adjusted for inflation and international price differences", "Source: OWID", ""],
+    "text": "Gloal population at poverty thresholds",
+    "subtitle": ["Adjusted for inflation and international price differences", "Source: Our World in Data", ""],
     "anchor": "start"
   },
   "encoding": {
     "x": {
         "field": "year",
-        "title":null,
+        "title": "Year",
         "type": "temporal",
         "axis": {"gridOpacity":0}
     },
     "y": {
       "field": "value",
       "type": "quantitative",
-      "title": null
+      "title": "Population"
     },
     "color": {
       "field": "series",
       "title": "Threshold",
-      "legend": {
+      "legend": { 
         "values": [
 "<$1.90", "$1.90-$5",  "$5-$10", "$10-$30", "Above $30"
         ]
       },
-      "scale": {"scheme": "category20b", "reverse":true}
+      "scale": {"scheme": "blues", "reverse":true}
     },
     "order": {
         "field": "series_rank"
